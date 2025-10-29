@@ -1,0 +1,10 @@
+# Force correct MIME type for PDF files
+<FilesMatch "\.pdf$">
+    Header set Content-Type "application/pdf"
+    Header set Content-Disposition "inline"
+</FilesMatch>
+
+# Enable CORS if needed
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>

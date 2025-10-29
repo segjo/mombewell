@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #610f18;
+    --secondary-color: #8a1524;
+    --text-dark: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+}
+
+.hero-section {
+    background: #610f18;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-title {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section.bg-light {
+    background-color: #e9cbc4 !important;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.offer-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(233, 30, 99, 0.2);
+}
+
+.offer-card .card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.offer-card .card-text {
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.offer-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.contact-section {
+    background: linear-gradient(135deg, #fff5f7 0%, #ffeef2 100%);
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(233, 30, 99, 0.25);
+}
+
+footer {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #e9cbc4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
