@@ -21,7 +21,7 @@ A single-page responsive website built with Bootstrap 5 framework.
 ## File Structure
 
 ```
-mombewell/src/
+mombewell/
 ├── index.html          # Main website file
 ├── styles.css          # Custom styles
 ├── images/
