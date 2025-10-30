@@ -74,11 +74,15 @@
 /* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-dark);
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
 }
 
 /* Navigation styles */
@@ -296,6 +300,39 @@ footer a {
 
 footer a:hover {
   color: #ffffff;
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .col-md-6,
+  .col-lg-4,
+  .col-lg-6,
+  .col-lg-8 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navbar-collapse {
+    width: 100% !important;
+    min-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .offer-card {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 768px) {

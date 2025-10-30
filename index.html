@@ -439,6 +439,13 @@
         const sections = document.querySelectorAll("section[id]");
         const navLinks = document.querySelectorAll(".nav-link");
         const homeSection = document.getElementById("home");
+        
+        // Close mobile menu on scroll
+        const navbarCollapse = document.getElementById("navbarNav");
+        if (window.innerWidth < 992 && navbarCollapse.classList.contains("show")) {
+          const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
+          bsCollapse.hide();
+        }
 
         // Handle navbar background based on scroll position
         const homeSectionBottom =
