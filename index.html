@@ -94,14 +94,14 @@
     </section>
 
     <!-- Course Inquiry Section -->
-    <section class="section bg-light" id="course-inquiry">
+    <section class="section bg-white" id="course-inquiry">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2 class="section-title">Nächste Events</h2>
             <p class="lead mb-4">
-              Interessiert an unseren Kursen? Wir bieten regelmässig neue Kurse an. 
-              Für aktuelle Kursdaten und Verfügbarkeit schreib uns einfach eine E-Mail.
+              Interessiert an unseren Workshops? 
+              Für aktuelle Kursdaten und Verfügbarkeit schreib uns gerne eine E-Mail.
               Wir freuen uns darauf, dich kennenzulernen!
             </p>
             <a href="mailto:info@mombewell.ch?subject=Anfrage%20Kursdaten&body=Hallo%20MomBeWell-Team%2C%0A%0AIch%20interessiere%20mich%20f%C3%BCr%20eure%20Kurse%20und%20m%C3%B6chte%20gerne%20mehr%20%C3%BCber%20die%20aktuellen%20Kursdaten%20erfahren.%0A%0ALiebe%20Gr%C3%BCsse" 
@@ -125,8 +125,7 @@
                 <i class="bi bi-book-half offer-icon"></i>
                 <h5 class="card-title">Muttertäts-Workshops</h5>
                 <p class="card-text">
-                  Entdecke die verschiedenen Facetten der Mutterschaft in
-                  unseren inspirierenden Workshops.
+                  Wir stellen dir das Konzept der Muttertät vor und moderieren ein Treffen, an dem du Orientierung, Inspiration und wertvollen Austausch erwarten darfst – dein Baby darf natürlich dabei sein.
                 </p>
                 <button
                   type="button"
@@ -147,16 +146,16 @@
                 <i class="bi bi-heart-pulse offer-icon"></i>
                 <h5 class="card-title">MomBeWell-Kurs</h5>
                 <p class="card-text">
-                  Unser ganzheitlicher Kurs für dein körperliches und seelisches
-                  Wohlbefinden als Mama.
+                  Unser Kurs ist  eine konstruktive Auseinandersetzung mit dem Mama-sein und die Gelegenheit im Kreis unter Frauen gegenseitig unsere psychische und spirituelle Kraft zu stärken.
                 </p>
-                <a
-                  href="pdfs/MomBeWell-Kurs.pdf"
-                  target="_blank"
+                <button
+                  type="button"
                   class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mombewell-kursModal"
                 >
-                  <i class="bi bi-file-earmark-pdf"></i> Mehr erfahren
-                </a>
+                  <i class="bi bi-info-circle"></i> Mehr erfahren
+                </button>
               </div>
             </div>
           </div>
@@ -168,12 +167,18 @@
                 <i class="bi bi-people-fill offer-icon"></i>
                 <h5 class="card-title">Workshop für Paare</h5>
                 <p class="card-text">
-                  Gemeinsam den Übergang zur Elternschaft gestalten – ein
-                  Workshop für werdende Eltern.
+                  
+Eltern werden - Paar bleiben: 
+Ein Workshop für Paare, die im Elternalltag ihrer Paarbeziehung Stärken wollen.
                 </p>
-                <!--<a href="pdfs/Workshop-Paare.pdf" target="_blank" class="btn btn-primary">
-                                <i class="bi bi-file-earmark-pdf"></i> Mehr erfahren
-                            </a>-->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#paareModal"
+                >
+                  <i class="bi bi-info-circle"></i> Mehr erfahren
+                </button>
               </div>
             </div>
           </div>
@@ -183,14 +188,19 @@
             <div class="card offer-card">
               <div class="card-body text-center">
                 <i class="bi bi-person-check offer-icon"></i>
-                <h5 class="card-title">Einzelcoaching</h5>
+                <h5 class="card-title">Einzelcoaching und Wochenbett</h5>
                 <p class="card-text">
                   Individuelle Begleitung und Wochenbettbegleitung bei Stefanie
-                  für Ihre persönlichen Themen.
+                  für deine persönlichen Themen, Spezialgebiet Zwillinge.
                 </p>
-                <!--<a href="pdfs/Workshop-Paare.pdf" target="_blank" class="btn btn-primary">
-                                <i class="bi bi-file-earmark-pdf"></i> Mehr erfahren
-                            </a>-->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#coachingModal"
+                >
+                  <i class="bi bi-info-circle"></i> Mehr erfahren
+                </button>
               </div>
             </div>
           </div>
@@ -205,9 +215,14 @@
                   Austausch und Unterstützung zu Themen wie (Nicht)Stillen oder
                   Geburtserfahrungen in vertrauensvoller Runde.
                 </p>
-                <!--<a href="https://1drv.ms/b/s!YOUR_ONEDRIVE_LINK_5" target="_blank" class="btn btn-primary">
-                                <i class="bi bi-file-earmark-pdf"></i> Mehr erfahren
-                            </a>-->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#frauenkreiseModal"
+                >
+                  <i class="bi bi-info-circle"></i> Mehr erfahren
+                </button>
               </div>
             </div>
           </div>
@@ -223,29 +238,257 @@
       >
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="workshopModalLabel">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title text-center" id="workshopModalLabel">
                 Muttertäts-Workshops
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                class="btn-close position-absolute end-0 me-3"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
               <p>
-                Entdecke die verschiedenen Facetten der Mutterschaft in
-                unseren inspirierenden Workshops. Unsere Angebote richten sich
-                an werdende und frischgebackene Mamas, die sich fachlichen
-                Input, Inspiration und wertvollen Austausch wünschen.
+                
+
+In diesem Workshop widmen wir uns ganz dem Thema MUTTERTÄT. Vielleicht kennst du diesen Begriff schon, vielleicht ist er neu. In beiden Fällen laden wir dich herzlich ein! Im Workshop sprechen wir über die Muttertät und fokussieren uns bewusst auf die psychischen und spirituellen Aspekte der Mutterschaft.
+
+ Vielleicht bist du gerade schwanger, vielleicht bist du Mama von einem Neugeborenen, Baby, Kleinkind oder mehreren Kindern? Hier findest du den Raum um unter Frauen darüber zu sprechen, wie es dir im Prozess des Mama-seins gerade geht. Nicht weil es dir so schlecht geht, dass du das nötig hättest, sondern einfach weil du spürst dass deine Entwicklung von der Frau zur Mutter geehrt und reflektiert werden darf. Hier bist du willkommen, genau so wie du bist mit all deinen Gefühlen: Dankbarkeit, Überlastung, Stolz, Enttäuschung, Freude,…
+
+Wir freuen uns schon sehr darauf zusammen mit euch in das Thema Muttertät einzutauchen! 
+
+Dein Baby oder Kleinkind kannst du gerne an den Workshop mitnehmen.
               </p>
-              <ul>
-                <li>Workshops zu Themen rund um die Muttertät</li>
-                <li>Erfahrungsaustausch in geschütztem Rahmen</li>
-                <li>Impulse für dein persönliches Wachstum und Wohlbefinden</li>
-                <li>Leitung durch erfahrene Fachpersonen</li>
+            
+              <p>
+                Für weitere Informationen und Termine schreib uns gerne
+                an <a href="mailto:info@mombewell.ch">info@mombewell.ch</a>.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Schließen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Frauenkreise mit Babies -->
+      <div
+        class="modal fade"
+        id="frauenkreiseModal"
+        tabindex="-1"
+        aria-labelledby="frauenkreiseModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title text-center" id="frauenkreiseModalLabel">
+                Frauenkreise mit Babies
+              </h5>
+              <button
+                type="button"
+                class="btn-close position-absolute end-0 me-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p>
+                Hast du das Bedürfnis, deiner Geburtserfahrung bewusst heilsamen Raum zu geben? Oder deine Erfahrungen mit dem Thema Stillen und all den Gefühlen des allenfalls Nicht-Stillen-Könnens?
+              </p>
+              <p>
+                Sei herzlich willkommen zu unseren Frauenkreisen. Hier kannst du zuhörend und erzählend deine Geburts- und/oder Still-erfahrungen integrieren: Im intimen Raum unter Frauen teilen wir, wie die Geburt bzw. unsere Erfahrungen mit Stillen und Nicht-stillen-können für uns waren und ehren bewusst die Meisterinnenleistung des Gebärens sowie unsere Brüste,  die okay sind, unabhängig davon ob unsere Kinder daraus trinken oder nicht.          <p>
+                Für weitere Informationen und Termine schreib uns gerne
+                an <a href="mailto:info@mombewell.ch">info@mombewell.ch</a>.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Schließen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Einzelcoaching -->
+      <div
+        class="modal fade"
+        id="coachingModal"
+        tabindex="-1"
+        aria-labelledby="coachingModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title text-center" id="coachingModalLabel">
+                Einzelcoaching & Wochenbettbegleitung
+              </h5>
+              <button
+                type="button"
+                class="btn-close position-absolute end-0 me-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p>
+                                In Stefanies prozessorientierten Coachingstunden findest du einen gehaltenen und unterstützenden Raum, um diese Prozesse der Mamawerdung während der Muttertät zu bearbeiten.
+
+ </p>
+ <p>Spezialgebiet:
+ Ihr erwartet oder habt Zwillinge? Gerne beratet Stefanie - selber Mama von drei Kindern, zwei davon Zwillinge. Sei es bei der Suche nach zwillingsgerechten Dondolos, Spielbögen oder Tragis oder beim Versuch den Alltag zu managen - In dieser Beratung geht es ganz um eure Anliegen rund um das Handling als Familie mit Zwillingen. 
+  </p>
+              <p>Kosten:
+CHF 120 pro 60 Minuten
+
+Praxisort:
+Stadt Bern
+              </p>
+              <p>
+                Im Angebot ist ausserdem eine nährende und reflektierende Begleitung in der Zeit nach der Geburt. Speziell auch dann, wenn die Hebammenbegleitung aufhört. 
+
+Direkt bei Euch zuhause ist Stefanie für dich und dein*e Partner*in für Fragen und Bedürfnisse aller Art da (auch eine wärmende Suppe ist im Angebot). 
+
+              </p><p>Kosten:
+CHF 120 pro 60 Minuten
+
+Praxisort: Raum Bern bei Dir zuhause
+              </p>
+              <p>
+                Für weitere Informationen und Termine schreib uns gerne
+                an <a href="mailto:info@mombewell.ch">info@mombewell.ch</a>.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Schließen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for Workshop für Paare -->
+      <div
+        class="modal fade"
+        id="paareModal"
+        tabindex="-1"
+        aria-labelledby="paareModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title text-center" id="paareModalLabel">
+                Workshop für Paare
+              </h5>
+              <button
+                type="button"
+                class="btn-close position-absolute end-0 me-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p>
+                <strong>Was:</strong> Zwei Nachmittage für mehr Gelassenheit, Verbindung und Klarheit – als (werdende) Eltern und als Paar
+              </p>
+              <p>
+                <strong>Wo:</strong> Stadt Bern
+              </p>
+              <p>
+                <strong>💰 Kosten:</strong> 300Franken pro Paar für beide Nachmittage
+              </p>
+              <p>
+                <strong>🌿Leitung:</strong> Nora Riedtmann (Paartherapeutin) und Stefanie Gfeller (Prozessarbeiterin)
+              </p>
+              <p>
+                Im Kurs vernetzt ihr euch mit anderen Paaren, die (Klein)kinder haben oder erwarten und erhaltet:
+              </p>
+              <p class="mb-2">
+                👫 entlastende Orientierung dazu was Elternschaft mit euch als Paar machen kann
+              </p>
+              <p class="mb-2">
+                🛠 Praktische Tools zur Beziehungspflege und Tipps zum Umgang mit Konflikten aufgrund der Elternschaft
+              </p>
+              <p class="mb-4">
+                🤝 Gemeinsame positive Neuausrichtung auf eure weitere Zukunft als Paar und Familie
+              </p>
+              <p>
+                Für weitere Informationen und Termine schreib uns gerne
+                an <a href="mailto:info@mombewell.ch">info@mombewell.ch</a>.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Schließen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for MomBeWell-Kurs -->
+      <div
+        class="modal fade"
+        id="mombewell-kursModal"
+        tabindex="-1"
+        aria-labelledby="mombewell-kursModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5 class="modal-title text-center" id="mombewell-kursModalLabel">
+                MomBeWell-Kurs
+              </h5>
+              <button
+                type="button"
+                class="btn-close position-absolute end-0 me-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p>
+                In unserem MomBeWell-Kurs findest du einen sicheren Raum, in dem du dich mit deinem Mama-sein auseinandersetzen kannst. 
+                Wir bieten eine Mischung aus geleiteten Impulsen und offenem Austausch zu Themen, die dich als Mama beschäftigen.
+ >
+              <p>
+                Im Kreis unter Frauen stärken wir gemeinsam unsere psychische und spirituelle Kraft. Wir sprechen über die verschiedenen 
+                Facetten des Mutterseins, teilen Erfahrungen und unterstützen uns gegenseitig auf diesem Weg.
+              </p>
+              <p>
+                Der Kurs umfasst mehrere Treffen, bei denen du:
+              </p>
+              <ul class="list-unstyled">
+                <li>deine Rolle als Mutter reflektierst</li>
+                <li>Kraft und Inspiration im Austausch mit anderen Müttern findest</li>
+                <li>deine eigenen Bedürfnisse wahrnimmst und ernst nimmst</li>
+                <li>Strategien für mehr Wohlbefinden im Alltag entwickelst</li>
               </ul>
               <p>
                 Für weitere Informationen und Termine schreib uns gerne
