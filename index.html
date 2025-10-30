@@ -21,6 +21,15 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .soft-line {
+        border: 0;
+        height: 3px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        margin: 2rem auto;
+        width: 70%;
+      }
+    </style>
   </head>
   <body>
     <!-- Navigation Menu -->
@@ -98,6 +107,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
+            <hr class="soft-line">
             <h2 class="section-title">Nächste Events</h2>
             <p class="lead mb-4">
               Interessiert an unseren Workshops? 
@@ -106,7 +116,7 @@
             </p>
             <a href="mailto:info@mombewell.ch?subject=Anfrage%20Kursdaten&body=Hallo%20MomBeWell-Team%2C%0A%0AIch%20interessiere%20mich%20f%C3%BCr%20eure%20Kurse%20und%20m%C3%B6chte%20gerne%20mehr%20%C3%BCber%20die%20aktuellen%20Kursdaten%20erfahren.%0A%0ALiebe%20Gr%C3%BCsse" 
                class="btn btn-primary btn-lg">
-              <i class="bi bi-envelope me-2"></i>Kursdaten anfragen
+              Kursdaten anfragen
             </a>
           </div>
         </div>
@@ -122,7 +132,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="card offer-card">
               <div class="card-body text-center">
-                <i class="bi bi-book-half offer-icon"></i>
+                <span class="offer-icon">🌸</span>
                 <h5 class="card-title">Muttertäts-Workshops</h5>
                 <p class="card-text">
                   Wir stellen dir das Konzept der Muttertät vor und moderieren ein Treffen, an dem du Orientierung, Inspiration und wertvollen Austausch erwarten darfst – dein Baby darf natürlich dabei sein.
@@ -133,7 +143,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#workshopModal"
                 >
-                  <i class="bi bi-info-circle"></i> Mehr erfahren
+                  👉 Mehr erfahren
                 </button>
               </div>
             </div>
@@ -143,7 +153,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="card offer-card">
               <div class="card-body text-center">
-                <i class="bi bi-heart-pulse offer-icon"></i>
+                <span class="offer-icon">🌿</span>
                 <h5 class="card-title">MomBeWell-Kurs</h5>
                 <p class="card-text">
                   Unser Kurs ist  eine konstruktive Auseinandersetzung mit dem Mama-sein und die Gelegenheit im Kreis unter Frauen gegenseitig unsere psychische und spirituelle Kraft zu stärken.
@@ -154,7 +164,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#mombewell-kursModal"
                 >
-                  <i class="bi bi-info-circle"></i> Mehr erfahren
+                  👉 Mehr erfahren
                 </button>
               </div>
             </div>
@@ -164,7 +174,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="card offer-card">
               <div class="card-body text-center">
-                <i class="bi bi-people-fill offer-icon"></i>
+                <span class="offer-icon">❤️</span>
                 <h5 class="card-title">Workshop für Paare</h5>
                 <p class="card-text">
                   
@@ -177,7 +187,7 @@ Ein Workshop für Paare, die im Elternalltag ihrer Paarbeziehung Stärken wollen
                   data-bs-toggle="modal"
                   data-bs-target="#paareModal"
                 >
-                  <i class="bi bi-info-circle"></i> Mehr erfahren
+                  👉 Mehr erfahren
                 </button>
               </div>
             </div>
@@ -187,7 +197,7 @@ Ein Workshop für Paare, die im Elternalltag ihrer Paarbeziehung Stärken wollen
           <div class="col-md-6 col-lg-4">
             <div class="card offer-card">
               <div class="card-body text-center">
-                <i class="bi bi-person-check offer-icon"></i>
+                <span class="offer-icon">🦚</span>
                 <h5 class="card-title">Einzelcoaching und Wochenbett</h5>
                 <p class="card-text">
                   Individuelle Begleitung und Wochenbettbegleitung bei Stefanie
@@ -199,7 +209,7 @@ Ein Workshop für Paare, die im Elternalltag ihrer Paarbeziehung Stärken wollen
                   data-bs-toggle="modal"
                   data-bs-target="#coachingModal"
                 >
-                  <i class="bi bi-info-circle"></i> Mehr erfahren
+                  👉 Mehr erfahren
                 </button>
               </div>
             </div>
@@ -209,7 +219,7 @@ Ein Workshop für Paare, die im Elternalltag ihrer Paarbeziehung Stärken wollen
           <div class="col-md-6 col-lg-4">
             <div class="card offer-card">
               <div class="card-body text-center">
-                <i class="bi bi-chat-heart offer-icon"></i>
+                <span class="offer-icon">🌹</span>
                 <h5 class="card-title">Frauenkreise mit Babies</h5>
                 <p class="card-text">
                   Austausch und Unterstützung zu Themen wie (Nicht)Stillen oder
@@ -221,7 +231,7 @@ Ein Workshop für Paare, die im Elternalltag ihrer Paarbeziehung Stärken wollen
                   data-bs-toggle="modal"
                   data-bs-target="#frauenkreiseModal"
                 >
-                  <i class="bi bi-info-circle"></i> Mehr erfahren
+                  👉 Mehr erfahren
                 </button>
               </div>
             </div>
@@ -474,22 +484,27 @@ Praxisort: Raum Bern bei Dir zuhause
             </div>
             <div class="modal-body text-center">
               <p>
-                In unserem MomBeWell-Kurs findest du einen sicheren Raum, in dem du dich mit deinem Mama-sein auseinandersetzen kannst. 
-                Wir bieten eine Mischung aus geleiteten Impulsen und offenem Austausch zu Themen, die dich als Mama beschäftigen.
- >
-              <p>
-                Im Kreis unter Frauen stärken wir gemeinsam unsere psychische und spirituelle Kraft. Wir sprechen über die verschiedenen 
-                Facetten des Mutterseins, teilen Erfahrungen und unterstützen uns gegenseitig auf diesem Weg.
+                <strong>🌸 MomBeWell-Kurs</strong><br>
+              
               </p>
               <p>
-                Der Kurs umfasst mehrere Treffen, bei denen du:
+                🌿Gönne dir eine konstruktive Auszeit vom Alltag und stärke zusammen mit anderen Mamas deine psychische und spirituelle Kraft.
               </p>
-              <ul class="list-unstyled">
-                <li>deine Rolle als Mutter reflektierst</li>
-                <li>Kraft und Inspiration im Austausch mit anderen Müttern findest</li>
-                <li>deine eigenen Bedürfnisse wahrnimmst und ernst nimmst</li>
-                <li>Strategien für mehr Wohlbefinden im Alltag entwickelst</li>
-              </ul>
+              <p>
+                👑An vier Nachmittagen widmen wir uns hier in Bern Themen des Mama-seins:
+              </p>
+              <p class="mb-2">
+                💫Energiemanagement<br>
+                💫Selbstbewusstseins in der Mutterrolle<br>
+                💫Stärkung der Partnerschaft im Elternalltag<br>
+                💫Umgang mit (eigenen und fremden) Emotionen
+              </p>
+              <p class="mb-4 fst-italic">
+                ...denn Mutterschaft ist kein instiktives Programm sondern eine bewusste Auseinandersetzung!
+              </p>
+              <p>
+                👭 <strong>Leitung:</strong> Nora Riedtmann (Paartherapeutin) und Stefanie Gfeller (Prozessarbeiterin)
+              </p>
               <p>
                 Für weitere Informationen und Termine schreib uns gerne
                 an <a href="mailto:info@mombewell.ch">info@mombewell.ch</a>.
@@ -555,7 +570,12 @@ Praxisort: Raum Bern bei Dir zuhause
 
     <!-- Who We Are Section -->
     <section class="section" id="team">
-      <div class="container">
+      <div class="container text-center">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8">
+            <h2 class="section-title mb-4">Wer wir sind</h2>
+          </div>
+        </div>
         <div class="row align-items-center mb-5">
           <div class="col-lg-6 mb-4 mb-lg-0">
             <img
@@ -566,8 +586,7 @@ Praxisort: Raum Bern bei Dir zuhause
             />
           </div>
           <div class="col-lg-6">
-            <div class="lead">
-              <h2 class="mb-4">Wer wir sind</h2>
+            <div class="lead text-center">
               <p>
                 Wir sind die drei Gründerinnen von MomBeWell und die, die auf
                 dem Spielplatz mit Stift und Block am visionieren sind. Wir sind
