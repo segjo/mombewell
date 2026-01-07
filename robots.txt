@@ -1,0 +1,12 @@
+# robots.txt for mombewell.ch
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the site
+Disallow: 
+
+# Sitemap location
+Sitemap: https://mombewell.ch/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
