@@ -216,7 +216,9 @@ section.contact-section {
   border: none;
   border-radius: 15px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   height: 100%;
   overflow: hidden;
   display: flex;
@@ -380,6 +382,18 @@ footer a:hover {
 }
 .workshop-card .card-body p > strong {
   color: var(--primary-color);
+}
+
+/* Date label for single-event display */
+.event-date {
+  display: inline-block;
+  background: rgba(97, 15, 24, 0.06);
+  color: var(--primary-color);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
 }
 
 /* Left-align the workshop details and align labels in a column */
