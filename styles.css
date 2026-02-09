@@ -50,7 +50,7 @@
   }
   .nav-item {
     width: 100%;
-    text-align: right;
+    text-align: center;
   }
   .nav-link {
     color: var(--primary-color) !important;
