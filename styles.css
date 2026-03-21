@@ -514,3 +514,19 @@ footer a:hover {
   margin-right: 0;
   padding-left: 0;
 }
+
+/* Testimonials inside workshop cards */
+.workshop-card .testimonials {
+  background-color: rgba(233, 203, 196, 0.18); /* soft warm tint */
+  border: 1px solid rgba(97, 15, 24, 0.06);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.workshop-card .testimonials h6 {
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.workshop-card .testimonials .blockquote p {
+  color: #3b3b3b;
+}
