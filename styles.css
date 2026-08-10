@@ -502,9 +502,22 @@ footer a:hover {
   max-width: 90%;
   height: auto;
   display: block;
-  margin: 0.75rem auto 1rem auto;
+  margin: 0.4rem auto 0.75rem auto;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.workshop-image-smaller {
+  max-width: 65%;
+}
+
+.workshop-button {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.rotate-left {
+  transform: rotate(-90deg);
 }
 
 /* Ensure the details list uses the full card width and starts at the left edge */
