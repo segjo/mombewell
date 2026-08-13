@@ -530,3 +530,50 @@ footer a:hover {
 .workshop-card .testimonials .blockquote p {
   color: #3b3b3b;
 }
+
+/* Events overview table-like layout */
+.events-overview .events-table {
+  display: block;
+  max-width: 720px;
+}
+.events-overview .events-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem; /* increased spacing */
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.04);
+}
+.events-overview .events-row:last-child {
+  border-bottom: none;
+}
+.events-overview .events-date {
+  min-width: 260px;
+  text-align: right;
+  padding-right: 2rem; /* one tab more space */
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.events-overview .events-name {
+  text-align: left;
+  flex: 1 1 auto;
+  color: #333;
+  font-weight: 500;
+}
+.events-overview .events-info {
+  color: #d63384; /* accent color */
+  font-weight: 600;
+}
+
+@media (max-width: 576px) {
+  .events-overview .events-row {
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: center;
+  }
+  .events-overview .events-date {
+    text-align: center;
+    min-width: 0;
+    padding-right: 0;
+  }
+}
