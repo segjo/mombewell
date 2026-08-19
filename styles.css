@@ -219,6 +219,16 @@ section.contact-section {
   max-width: 34rem;
 }
 
+.offers-intro a,
+.offers-intro a:visited {
+  color: var(--primary-color);
+}
+
+.offers-intro a:hover,
+.offers-intro a:focus {
+  color: var(--secondary-color);
+}
+
 .section {
   padding: 60px 0;
 }
