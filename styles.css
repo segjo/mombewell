@@ -186,8 +186,9 @@ section.contact-section {
 }
 
 .about-image {
-  width: 400px;
+  width: min(400px, 100%);
   height: 400px;
+  aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 30px;
@@ -214,6 +215,21 @@ section.contact-section {
   object-fit: cover;
   object-position: center 25%;
   transform: scale(1.25);
+}
+
+.team-member-image-ste-frame {
+  width: min(400px, 100%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 30px;
+}
+
+.team-member-image-ste {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .team-member-name {
